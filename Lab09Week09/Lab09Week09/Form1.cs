@@ -20,7 +20,7 @@ namespace Lab09Week09
 
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
-
+            //วาดเส้นโค้ง
         }
     }
 }
