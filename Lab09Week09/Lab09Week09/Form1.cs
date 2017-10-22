@@ -19,7 +19,7 @@ namespace Lab09Week09
             g.Dispose();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void panel1_Paint_1(object sender, PaintEventArgs e)
         {
             LinearGradientBrush pnlGdt = new LinearGradientBrush(panel1.ClientRectangle,
                 Color.Yellow, Color.Navy, 0f, true);
@@ -27,7 +27,7 @@ namespace Lab09Week09
             pnlGdt.Dispose();
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
+        private void panel2_Paint_1(object sender, PaintEventArgs e)
         {
             LinearGradientBrush pnlGdt = new LinearGradientBrush(panel2.ClientRectangle,
                 Color.Yellow, Color.Navy, 90f, true);
