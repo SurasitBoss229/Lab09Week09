@@ -20,7 +20,11 @@ namespace Lab09Week09
 
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
-
+            Graphics g = e.Graphics;
+            Bitmap bmp = new Bitmap("D:\\Leo.PNG");
+            this.SetClientSizeCore(bmp.Width + 20, bmp.Height + 20);
+            g.DrawImage(bmp, 10, 10);
+            g.Dispose();
         }
     }
 }
