@@ -20,7 +20,12 @@ namespace Lab09Week09
 
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
-
+            Graphics g = e.Graphics;
+            Image image = Image.FromFile("d:\\Leo.PNG");
+            TextureBrush brush = new TextureBrush(image);
+            Rectangle rect = new Rectangle(10, 10, 180, 150);
+            g.FillEllipse(brush, rect);
+            g.Dispose();
         }
     }
 }
