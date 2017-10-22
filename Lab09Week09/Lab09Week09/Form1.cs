@@ -20,7 +20,17 @@ namespace Lab09Week09
 
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
+            Graphics g = e.Graphics;
+            // Draw reference ellipse with dash line.
+            Pen penEllipse = new Pen(Color.Brown);
+            penEllipse.DashStyle = DashStyle.Dash;
+            g.DrawEllipse(penEllipse, 20, 20, 200, 150);
 
+            // Draw arc
+            Pen penArc = new Pen(Color.Magenta, 2);
+            g.DrawArc(penArc, 20, 20, 200, 150, 90, 180);
+
+            g.Dispose();
         }
     }
 }
