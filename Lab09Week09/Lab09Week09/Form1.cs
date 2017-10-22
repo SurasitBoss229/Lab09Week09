@@ -26,9 +26,11 @@ namespace Lab09Week09
             penEllipse.DashStyle = DashStyle.Dash;
             g.DrawEllipse(penEllipse, 20, 20, 200, 150);
 
-            // Draw arc
-            Pen penArc = new Pen(Color.Magenta, 2);
-            g.DrawArc(penArc, 20, 20, 200, 150, 90, 180);
+            // Draw pie
+            Pen penPie = new Pen(Color.Magenta, 2);
+            g.DrawPie(penPie, 20, 20, 200, 150, 45, 90);
+            Pen penPie1 = new Pen(Color.BlueViolet, 2);
+            g.DrawPie(penPie1, 20, 20, 200, 150, 150, 45);
 
             g.Dispose();
         }
